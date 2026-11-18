@@ -1,0 +1,10 @@
+version:"3.8"
+
+services:
+  mongo:
+    image:mongo
+    ports:
+    - 17017:17017
+    environment:
+       ME_CONFIG_MONGODB_ADMINPASSWORD=QWERT 
+       ME_CONFIG_MONGODB_URL="mongodb://admin:QWERT@mongo:27017" mongo-express
